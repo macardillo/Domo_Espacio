@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+-----------------------INDEX--------------------------
+html{
+    scroll-behavior: smooth; 
+}
+
+nav{
+    background-color:#a5aa9a;         /*barra general*/
+    background-image: linear-gradient(#a5aa9a,#828282);
+    display: flex;
+    align-items:center;
+    justify-content:left;
+   }
+
+nav div img{
+    object-fit: contain;
+    width: 50%;
+    height: 60%;
+    margin-left: 30px;
+   
+}
+
+nav div p{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:azure;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px black;
+    margin-right: 180px;     
+}
+
+div span{
+    color:black
+}
+
+nav ul{
+    list-style: none;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; 
+      
+}
+
+nav ul li a{
+    color:azure;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+ }
+
+nav ul li :hover
+{
+    color:rgb(2, 36, 63);
+}
+
+
+.fondo {
+    height: 100vh;
+    background-color: grey;
+    background-image: linear-gradient(grey, black, whithe);
+}
+
+main{
+    background-image: url(../images/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+   }
+
+.intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:22px;
+    font-weight: lighter;
+    color: rgb(19, 26, 26);
+    text-transform: uppercase;
+    top: 320px;
+    left: 40%;
+    position: absolute;
+    border-style: double;
+    border-width: 3px;
+    border-color: rgb(19,26,26);
+                 
+}
+
+footer{
+    height: 65px;
+    width: 100%;
+    background-color: #a5aa9a;
+    color: rgb(10, 10, 10);
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+
+@media only screen and (min-width: 320px){  
+
+    nav{
+        display: grid;
+        grid-template-columns: 35px 100px 170px;
+       
+
+       }
+    
+    nav div img{
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+        margin-left: 10px;
+        
+    }
+    
+    nav div p{
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;        
+        
+    }
+       
+    nav ul{
+        width: 100%;
+        height: 60px;
+        place-items: center;
+    }
+    
+    nav ul li a{
+        font-size: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+     }
+     
+    main{
+        height: 80vh;
+        width: 100%;
+       }
+    
+    .intro{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:10px;
+        left: 30%;
+        top:250px;
+                          
+    }
+    
+    footer{
+        height: 50px;
+        font-size: 15px;
+             
+    } 
+   
+}
+
+
+
+
+
+/*---------------PROYECTOS-------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.galery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .grid-container{
+        background-color: lightgray;
+        display: grid;
+        grid-template-columns: 135px 135px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        grid-gap: 10px;
+        }
+
+    .galery_img{
+      object-fit: cover;
+      background-color: grey;
+    }
+ 
+}
+       
+     
+    
+    
+    
+
+
+/*---------------NOSOTROS---------------------------------------*/
+.contenedor-info{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-row: auto;
+    grid-gap:80px;
+    background-color:antiquewhite;
+    padding-top: 20px;
+}
+
+.frase2{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    color:rgb(43, 42, 42);
+}
+
+.frase1{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+font-size: 15px;
+color: rgb(68, 67, 67);
+padding-top: 15px;
+padding: 20px 20px;
+background-color: antiquewhite;
+
+}
+ 
+/*----------------------ASESORAMIENTO---------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.contenedor-g{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;    
+}
+
+.contenedor-g{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:row;
+    padding-left: 30px;
+    padding-right: 30px;
+}    
+
+
+.contenedor-g{
+    background-image: url(../images/Asesoramiento.jpg);
+    background-size: cover;
+    background-position: center;
+    
+} 
+
+.i1{
+   font-size: 18px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   color: #5a5959;
+   text-align:left;
+   
+}
+--------------------------CONTACTO-------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.form1{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+
+.form-contenedor{
+    width: 500px;
+    margin:auto;
+    background-color: grey; 
+    filter: opacity(0.6);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    margin-top: 80px;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    
+}
